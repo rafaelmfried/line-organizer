@@ -7,7 +7,6 @@ Este é um projeto Ruby que simula uma fila de atendimento, como em um banco ou 
 - Adição de clientes à fila
 - Atendimento de clientes por atendentes
 - Cálculo de estatísticas de simulação
-- Relatórios de cobertura de testes
 
 ## Requisitos
 
@@ -47,6 +46,6 @@ Para executar os testes, utilize o RSpec:
 bundle exec rspec
 ```
 
-### Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull request.

@@ -9,14 +9,12 @@ loop do
 
   case opcao
   when 1
-    puts "Duração da simulação (segundos):"
-    duration = gets.chomp.to_i
     puts "Número de clientes:"
     num_clients = gets.chomp.to_i
     puts "Número de atendentes:"
     num_attendants = gets.chomp.to_i
 
-    Simulator.run_simulation(duration, num_clients, num_attendants)
+    Simulator.run_simulation(num_clients, num_attendants)
   when 2
     break
   else

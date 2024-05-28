@@ -1,7 +1,7 @@
 require_relative 'ticket'
 require 'thread'
 
-class Queue
+class Line
   attr_reader :tickets
 
   def initialize

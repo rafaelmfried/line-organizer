@@ -1,5 +1,4 @@
 require 'securerandom'
-require 'thread'
 
 class Attendant
   class << self
@@ -18,7 +17,7 @@ class Attendant
 
   def request_ticket(queue)
     ticket = nil
-    mutex.synchronize { ticket = queue.remove_ticket }
+    ticket = queue.remove_ticket
     serve_client(ticket) if ticket
   end
 
@@ -27,6 +26,6 @@ class Attendant
     sleep(rand(1..10)) # Simula tempo do atendimento
     ticket.assign_attendant(id)
     ticket.mark_complete
-    puts "Attendant ##{id}. Ticket completed in ##{client.ticket.completed_at - client.ticket.created_at}"
+    puts "Attendant ##{id}. Ticket completed in ##{ticket.completed_at - ticket.created_at}"
   end
 end

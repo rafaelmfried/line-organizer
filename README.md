@@ -1,4 +1,4 @@
-# Fila Organizador
+# Line Organizer
 
 Este é um projeto Ruby que simula uma fila de atendimento, como em um banco ou supermercado. Ele utiliza threads para simular o atendimento de clientes por diferentes atendentes e calcula estatísticas de simulação, como tempo médio de espera, tempo médio no sistema e taxa de ocupação dos atendentes.
 
